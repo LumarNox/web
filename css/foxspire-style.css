@@ -1,0 +1,179 @@
+/* FoxSpire - Estilo mágico medieval */
+
+body { margin: 0; font-family: 'Segoe UI', sans-serif; background: linear-gradient(to bottom, #0a0a1f, ⁠111a33); color: #f5f5f5; background-image: url('../assets/fondo-bosque-magico.png'); background-size: cover; background-attachment: fixed; background-position: center; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+.navbar { background-color: rgba(10, 10, 40, 0.9); padding: 1rem 0; position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(10px); box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+
+.logo { display: flex; align-items: center; gap: 10px; font-size: 1.5rem; font-weight: bold; color: #7e5bef; }
+
+.logo img { height: 40px; }
+
+.nav-links { list-style: none; display: flex; gap: 20px; flex-wrap: wrap; }
+
+.nav-links li a { color: #ffffff; text-decoration: none; padding: 10px 15px; border-radius: 8px; transition: all 0.3s ease; }
+
+.nav-links li a:hover { background-color: #7e5bef; color: #fff; box-shadow: 0 0 10px #7e5bef; }
+
+.version-selector .btn { background-color: #7e5bef; color: #fff; padding: 10px 20px; margin-left: 10px; border: none; border-radius: 20px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+
+.version-selector .btn:hover { background-color: #9b6aff; box-shadow: 0 0 10px #9b6aff; }
+
+.hero { height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; background: rgba(0, 0, 0, 0.6); }
+
+.hero-content h1 { font-size: 3rem; color: #ffffff; text-shadow: 0 0 20px #7e5bef; }
+
+.hero-content p { font-size: 1.2rem; margin: 20px 0; color: #ddd; }
+
+.btn-primary { background-color: #7e5bef; color: white; padding: 12px 30px; border-radius: 30px; font-weight: bold; text-decoration: none; transition: 0.3s; }
+
+.btn-primary:hover { background-color: #a78bfa; box-shadow: 0 0 10px #a78bfa; }
+
+.section { padding: 60px 0; background: rgba(0, 0, 0, 0.6); text-align: center; }
+
+.bg-dark { background-color: rgba(10, 10, 30, 0.8); }
+
+h2 { color: #a78bfa; font-size: 2rem; margin-bottom: 10px; text-shadow: 0 0 10px #7e5bef; }
+
+p { color: #cccccc; font-size: 1.1rem; line-height: 1.6; }
+
+.store-buttons { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+
+.btn-secondary { background-color: transparent; color: #7e5bef; border: 2px solid #7e5bef; padding: 10px 25px; border-radius: 30px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+
+.btn-secondary:hover { background-color: #7e5bef; color: white; box-shadow: 0 0 10px #7e5bef; }
+
+.footer { padding: 30px 0; text-align: center; background-color: #0a0a23; color: #bbb; font-size: 0.9rem; }
+
+.social-links a { color: #aaa; margin: 0 10px; text-decoration: none; }
+
+.social-links a:hover { color: #fff; text-shadow: 0 0 5px #7e5bef; }
+
+.mascotas-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.mascota {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(126, 91, 239, 0.3);
+  transition: transform 0.3s;
+}
+
+.mascota:hover {
+  transform: scale(1.05);
+}
+
+.mascota img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.mascota h3 {
+  color: #a78bfa;
+  margin-bottom: 10px;
+}
+
+.mascota:hover {
+  box-shadow: 0 0 25px #a78bfa;
+  background-color: rgba(126, 91, 239, 0.1);
+  transform: scale(1.08);
+}
+
+.mascota:hover img {
+  filter: drop-shadow(0 0 10px #a78bfa);
+}
+
+.redes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.red-card {
+  background-color: <#1371209578624057354>a1a40;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 8px rgba(126, 91, 239, 0.2);
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.red-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #7e5bef;
+}
+
+.red-card img {
+  width: 80px;
+  height: auto;
+  image-rendering: auto;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 4px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* RESPONSIVE MENU */
+@media (max-width: 768px) {
+  .main-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-buttons.open {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    margin-left: auto;
+  }
+}

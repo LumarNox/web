@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoxSpire | Tienda Mágica</title>
+  <link rel="stylesheet" href="css/foxspire-style.css" />
+  <link rel="icon" href="assets/lumar-logo.png" />
+</head>
+<script>
+  const sonido = new Audio("assets/sonido-magico.mp3");
+  const zorros = document.querySelectorAll(".mascota");
+
+  zorros.forEach((zorro) => {
+    zorro.addEventListener("mouseenter", () => {
+      sonido.currentTime = 0;
+      sonido.play();
+    });
+  });
+</script>
+
+<body>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <button class="menu-toggle" id="menuToggle">
+  <span></span><span></span><span></span>
+</button>
+        <img src="assets/lumar-logo.png" alt="FoxSpire Logo" />
+        <span>FoxSpire</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#tienda">Tienda</a></li>
+          <li><a href="#rangos">Rangos</a></li>
+          <li><a href="#llaves">Llaves</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header >
+
+  <main class="hero" id="inicio">
+    <div class="hero-content">
+      <h1>Bienvenido a FoxSpire</h1>
+      <p>Un servidor mágico donde Lúmar y Nóxar te acompañarán en tu aventura. ¡Explora, colecciona y conquista!</p>
+      <a href="#tienda" class="btn-primary">Ir a la tienda</a>
+    </div>
+  </main>
+
+  <section id="modalidades" class="section">
+    <div class="container">
+      <h2>Modalidades</h2>
+      <p>Disfruta de Skywars, Survival mágico, eventos únicos y más con la ambientación de los zorritos encantados.</p>
+    </div>
+  </section>
+
+  <section id="tienda" class="section bg-dark">
+    <div class="container">
+      <h2>Tienda</h2>
+      <p>Compra rangos, llaves mágicas, objetos exclusivos y desbloquea ventajas especiales.</p>
+      <div class="store-buttons">
+        <a href="#rangos" class="btn-secondary">Ver Rangos</a>
+        <a href="#llaves" class="btn-secondary">Ver Llaves</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <h2>Preguntas Frecuentes</h2>
+      <p>¿Cómo ingreso? ¿Qué versión necesito? ¿Cómo consigo a Nóxar? Aquí respondemos tus dudas.</p>
+    </div>
+  
+</section>
+<section id="mascotas" class="section bg-dark">
+  <div class="container">
+    <h2>Lúmar y Nóxar</h2>
+    <p>Los guardianes mágicos del mundo de FoxSpire.</p>
+
+    <div class="mascotas-container">
+      <div class="mascota">
+        <img src="assets/lumar.png" alt="Lúmar" />
+        <h3>Lúmar</h3>
+        <p>Un zorro místico de energía pura. Guía a los aventureros por el buen camino.</p>
+      </div>
+      <div class="mascota">
+        <img src="assets/noxar.png" alt="Nóxar" />
+        <h3>Nóxar</h3>
+        <p>El hermano corrompido por la magia oscura. Su poder es inmenso pero inestable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="social" class="section redes">
+  <div class="container">
+    <h2>Únete a nuestras redes sociales</h2>
+    <p>¡Descubre nuestros servidores externos a Minecraft!</p>
+
+    <div class="redes-grid">
+      <a href="https://discord.com/invite/DWDJFJCan7" class="red-card" target="_blank">
+        <img src="assets/lumar-discord.png" alt="Discord FoxSpire" />
+      </a>
+
+      <a href="https://x.com/FOX__SPIRE" class="red-card" target="_blank">
+        <img src="assets/noxar-twitter.png" alt="Twitter FoxSpire" />
+      </a>
+
+      <a href="https://fox-spire.tebex.io/?action=preview&signature=96ae6cfd2248ddcecb71149da7387aedecd9327c246547a226ec2cd214b4d1e1&expires=1747300610" class="red-card" target="_blank">
+        <img src="assets/tienda-icon.png" alt="Tienda" />
+      </a>
+
+      <a href="https://discord.gg/foxspire-java" class="red-card" target="_blank">
+        <img src="assets/discord-icon.png" alt="Discord Java" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<header class="main-header">
+  <div class="container">
+    <div class="logo">
+      <img src="assets/lumar-logo.png" alt="FoxSpire Logo" />
+    </div>
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const nav = document.querySelector(".main-nav");
+  const buttons = document.querySelector(".nav-buttons");
+
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+    buttons.classList.toggle("open");
+  });
+</script>
+    <nav class="main-nav">
+      <a href="#inicio" class="nav-link active">INICIO</a>
+      <a href="#guias" class="nav-link">GUÍAS</a>
+      <a href="#anuncios" class="nav-link">ANUNCIOS</a>
+      <a href="#modalidades" class="nav-link">MODALIDADES</a>
+      <a href="#ayuda" class="nav-link">AYUDA</a>
+    </nav>
+
+    <div class="nav-buttons">
+      <a href="#tienda" class="btn-nav">TIENDA</a>
+      <a href="#login" class="btn-nav btn-secundario">INICIAR SESIÓN</a>
+    </div>
+  </div>
+</header>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 FoxSpire. Diseñado con magia y runas antiguas.</p>
+      <div class="social-links">
+        <a href="https://discord.gg/foxspire" target="_blank">Discord</a>
+        <a href="#">Términos</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
